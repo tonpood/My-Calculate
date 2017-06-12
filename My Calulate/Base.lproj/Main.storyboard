@@ -1,26 +1,93 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Calulate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ต้น" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBG-bQ-CeZ">
+                                <rect key="frame" x="121" y="20" width="172" height="37"/>
+                                <color key="tintColor" red="0.63794745252034823" green="0.95308242336620297" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.98838578464656968" green="1" blue="0.94046490773511338" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="กรอกเลข" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8F4-D8-Y5l">
+                                <rect key="frame" x="159" y="89" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDH-Qr-cA7">
+                                <rect key="frame" x="196" y="127" width="22" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="กรอกเลข" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0zC-M7-O9O">
+                                <rect key="frame" x="159" y="180" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgH-mn-qf4">
+                                <rect key="frame" x="173" y="233" width="69" height="30"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ANSWER">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVD-P7-z92">
+                                <rect key="frame" x="143" y="271" width="128" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NDH-Qr-cA7" firstAttribute="top" secondItem="8F4-D8-Y5l" secondAttribute="bottom" constant="8" id="1Ru-B0-2Gg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NDH-Qr-cA7" secondAttribute="trailing" constant="176" id="1WZ-Pp-NqU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0zC-M7-O9O" secondAttribute="trailing" constant="138" id="2lx-VY-ktn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xBG-bQ-CeZ" secondAttribute="trailing" constant="101" id="7LJ-dQ-muU"/>
+                            <constraint firstItem="RgH-mn-qf4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="153" id="AOu-js-hjd"/>
+                            <constraint firstItem="RgH-mn-qf4" firstAttribute="top" secondItem="0zC-M7-O9O" secondAttribute="bottom" constant="23" id="Gg1-S8-GOQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8F4-D8-Y5l" secondAttribute="trailing" constant="138" id="ccR-mD-ZqQ"/>
+                            <constraint firstItem="UVD-P7-z92" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="123" id="gFJ-H4-vIO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UVD-P7-z92" secondAttribute="trailing" constant="123" id="ggC-4S-1o5"/>
+                            <constraint firstItem="8F4-D8-Y5l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="gny-QE-3rU"/>
+                            <constraint firstItem="xBG-bQ-CeZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="101" id="h2f-Av-fQS"/>
+                            <constraint firstItem="0zC-M7-O9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="hBw-PD-DWF"/>
+                            <constraint firstItem="NDH-Qr-cA7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="176" id="hYG-GE-4zK"/>
+                            <constraint firstItem="xBG-bQ-CeZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hdy-9u-bp3"/>
+                            <constraint firstItem="UVD-P7-z92" firstAttribute="top" secondItem="RgH-mn-qf4" secondAttribute="bottom" constant="8" id="kUf-fT-CY5"/>
+                            <constraint firstItem="0zC-M7-O9O" firstAttribute="top" secondItem="NDH-Qr-cA7" secondAttribute="bottom" constant="17" id="mCq-KV-HLU"/>
+                            <constraint firstItem="8F4-D8-Y5l" firstAttribute="top" secondItem="xBG-bQ-CeZ" secondAttribute="bottom" constant="32" id="n8j-c6-NbE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RgH-mn-qf4" secondAttribute="trailing" constant="152" id="yXg-oj-gLQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="37.5"/>
         </scene>
     </scenes>
 </document>
